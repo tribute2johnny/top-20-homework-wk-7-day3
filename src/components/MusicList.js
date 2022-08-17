@@ -1,11 +1,12 @@
 import React from 'react';
 import Song from './Song';
+import './song.css';
 
 const MusicList = ({song}) => {
 
     const songChart = song.map((song, index) => {
         return (
-            <Song
+            <Song 
               key={song.id.attributes["im:id"]}
               position={index + 1}
               title={song['im:name'].label}
@@ -21,7 +22,7 @@ const MusicList = ({song}) => {
 
     return (
         <div>
-        <ul>
+        <ul className="songChart">
           {songChart}
         </ul>
       </div>

@@ -1,0 +1,23 @@
+.song {
+    border: 2px solid black;
+    flex: 0 1 24%;
+    flex: 0 1 calc(25% - 1em);
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+    background-color: black;
+    color: white;
+}
+
+.songChart {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    flex-shrink: 0;
+    text-align: center;
+    flex-basis: auto;
+    width: auto;
+    justify-content: space-between;
+    margin: auto;
+    
+}

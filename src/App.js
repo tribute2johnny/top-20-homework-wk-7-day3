@@ -4,8 +4,10 @@ import MusicContainer from './containers/MusicContainer';
 function App() {
   return (
     <div className="App">
-      <h1>Top 20 Charts Bonanza!!!</h1>
+      <h1 className="appH1">Top 20 Charts Bonanza!!!</h1>
+      <div className="listContainer">
       <MusicContainer />
+      </div>
     </div>
   );
 }

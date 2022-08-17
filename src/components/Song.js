@@ -1,15 +1,15 @@
 import React from 'react';
+import './song.css';
 
 const Song = ({artist, position, title, image, audio}) => {
 
     return (
-    <div>
-    <li>{artist}</li>
-    <li>{position}</li>
-    <li>{title}</li>
+    <div className="song">
+    <p>{artist}</p>
+    <p>{position}</p>
+    <p>{title}</p>
     <img src={image} alt="Ooopsie"></img>
     <audio controls src={audio} type="audio/mpeg"></audio>
-    <hr></hr>
     </div>    
     ) 
         
